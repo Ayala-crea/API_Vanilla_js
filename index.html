@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILBBEC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/ilbec.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/ilbec.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">HOME</a></li>
+                    <script src="./js/script.js">
+                    <li id="member"><a href="data.php">MEMBER</a></li>
+                    </script>
+                    <li><a href="side-menu-dark-crud-data-list.html">MEMBER</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>LET'S <br>JOIN US!!</h2>
+                <h3>International Logistic And Business International</h3>
+                <p>(Compatible/Generic)</p>
+                <button type="button">Register <img src="img/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="img/ilbec.png" class="controller">
+                <div class="color-box">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="social-link">
+            <img src="img/fb.png" >
+            <img src="img/tw.png" >
+            <img src="img/ig.png" >
+        </div>
+    </div>
+
+
+
+    <script src="./js/script.js">
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px"
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+
+    </script>
+
+<!-- <div class="container mt-5">
+    <div class="position-relative">
+        <h1 style="display: grid; place-items: center;">Data Pengguna</h1>
+    </div>
+    <div class="card border-success p-2 mb-2">
+        <table class="table table-bordered table-striped">
+            <thead class="col">
+                <tr>
+                    <th class="col-sm">Nama</th>
+                    <th class="col-sm">Email</th>
+                    <th class="col-sm">Aksi</th> </tr>
+            </thead>
+            <tbody class="col-sm" id="user-list">
+            </tbody>
+        </table>
+    </div>
+</div> -->
+
+    <!-- <script> -->
+<!-- //           // Fungsi untuk mengambil dan menampilkan data dari API
+//    function fetchData() {
+//     // URL API
+//     const apiUrl = 'https://jsonplaceholder.typicode.com/users';
+
+//     // Menggunakan fetch untuk mengambil data
+//     fetch(apiUrl)
+//         .then(response => {
+//             if (!response.ok) {
+//                 throw new Error(`HTTP error! Status: ${response.status}`);
+//             }
+//             return response.json();
+//         })
+//         .then(data => {
+//             // Menampilkan data dalam tabel
+//             const userList = document.getElementById('user-list');
+//             data.forEach(user => {
+//                 const row = userList.insertRow();
+//                 const cell1 = row.insertCell(0);
+//                 const cell2 = row.insertCell(1);
+//                 cell1.textContent = user.name;
+//                 cell2.textContent = user.email;
+//             });
+//         })
+//         .catch(error => {
+//             console.error('Kesalahan saat mengambil data:', error);
+//         });
+// }
+
+// // Memanggil fungsi fetchData saat halaman dimuat
+// window.onload = fetchData; -->
+<!-- //     </script> -->
+
+</body>
+
+</html>
